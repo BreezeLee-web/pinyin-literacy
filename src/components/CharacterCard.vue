@@ -39,7 +39,7 @@ const handleClick = () => {
   //   ? props.character.map(char => cnchar.shapeSpell(char)).join(' ')
   //   : cnchar.shapeSpell(props.character);
   // emit('click', pinyinText); // 格式：shuì zháo le
-  emit('click', cnchar.shapeSpell(props.character as string)); // 格式：shuì zháo le
+  emit('click', props.character); // 格式：shuì zháo le
 };
 </script>
 
