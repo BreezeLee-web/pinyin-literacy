@@ -102,7 +102,7 @@ const handleCardClick = (char: string) => {
         <!-- 汉字卡片区 -->
         <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
           <h2 class="text-2xl mb-4">{{ data.question2 }}</h2>
-          <div class="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4">
+          <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-4">
             <CharacterCard v-for="chars in data.question2_data" :key="chars.join('-')" :character="chars"
               @click="handleCardClick" />
           </div>
