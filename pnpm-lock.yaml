@@ -8,6 +8,24 @@ importers:
 
   .:
     dependencies:
+      cnchar:
+        specifier: ^3.2.6
+        version: 3.2.6
+      cnchar-draw:
+        specifier: ^3.2.6
+        version: 3.2.6
+      cnchar-idiom:
+        specifier: ^3.2.6
+        version: 3.2.6
+      cnchar-voice:
+        specifier: ^3.2.6
+        version: 3.2.6
+      cnchar-words:
+        specifier: ^3.2.6
+        version: 3.2.6
+      cnchar-xhy:
+        specifier: ^3.2.6
+        version: 3.2.6
       pinyin-pro:
         specifier: ^3.27.0
         version: 3.27.0
@@ -495,6 +513,27 @@ packages:
   chokidar@3.6.0:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
+
+  cnchar-draw@3.2.6:
+    resolution: {integrity: sha512-Rlfl8XkCZIDLZ/acOTdgpQCy7H+yhEFHXZVqCJ2V8080S9ROgVHUGSXaBa7x7lvKuxwArlR70kkMEEF1Md1SPw==}
+
+  cnchar-idiom@3.2.6:
+    resolution: {integrity: sha512-cBvvfjGHtKMY4Roon+oymvbnGPTZ5zR3sRisR3WPc14f1nsmbHL5LJ53lXNfjNSxeUq4l8yQ6QHIZHk2MdQByg==}
+
+  cnchar-types@3.2.6:
+    resolution: {integrity: sha512-LGU2ss7KcsI1Psme73+jffUX0ZDuChr6P9Rj2j8lynJHStklNpoC/+kheKSSUcXQ1u2KNvZt1Shs/5efcihHkg==}
+
+  cnchar-voice@3.2.6:
+    resolution: {integrity: sha512-fS/NUsjsA3cGff6jrs4LajyeE/JP+6adnWrE/LNQDZwDy4JCmP8YdZUs/l8jbT7q31gHI7OOQfVSkHyU7dZfIw==}
+
+  cnchar-words@3.2.6:
+    resolution: {integrity: sha512-g0FPLbaUaWxvUH/L2dHsQiWqvghwtfRWP+yCGDLWijza2MT6ET8GP8+dNbqYVmnSU02yUTlR7X1sUY5pckzL0Q==}
+
+  cnchar-xhy@3.2.6:
+    resolution: {integrity: sha512-GjSVfutaLDJGIB6s5MSPHK6Z9eY5Pf7QyVbgxR7dRFMkxJWEZvAEt2SYww7gpP51B2/NO+Q85oUX+S0uR8FU5Q==}
+
+  cnchar@3.2.6:
+    resolution: {integrity: sha512-7Up5ALAkoOTAHlRMN0B7VgrrRsp6+trgFV0M7xSsZ0TwnnBfW68gXClcE9Oz8sTOEu+zqGOZjBhlHNzPIBckDA==}
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -1324,6 +1363,32 @@ snapshots:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
+
+  cnchar-draw@3.2.6:
+    dependencies:
+      cnchar-types: 3.2.6
+
+  cnchar-idiom@3.2.6:
+    dependencies:
+      cnchar-types: 3.2.6
+
+  cnchar-types@3.2.6: {}
+
+  cnchar-voice@3.2.6:
+    dependencies:
+      cnchar-types: 3.2.6
+
+  cnchar-words@3.2.6:
+    dependencies:
+      cnchar-types: 3.2.6
+
+  cnchar-xhy@3.2.6:
+    dependencies:
+      cnchar-types: 3.2.6
+
+  cnchar@3.2.6:
+    dependencies:
+      cnchar-types: 3.2.6
 
   color-convert@2.0.1:
     dependencies:
