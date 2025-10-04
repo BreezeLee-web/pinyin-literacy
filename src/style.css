@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    user-select: none;
+    /* 标准写法,内容不可选 */
+}
