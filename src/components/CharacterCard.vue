@@ -1,5 +1,4 @@
-<script setup lang="js">
-import { computed } from 'vue';
+<script setup lang="ts">
 import cnchar from 'cnchar';
 import 'cnchar-idiom';
 import 'cnchar-xhy';
@@ -20,9 +19,6 @@ const props = defineProps({
 });
 
 setTimeout(() => {
-  console.log('__________________');
-  console.log('character: ', props.character);
-  console.log(cnchar.shapeSpell(props.character));
   // console.log(cnchar.spellToWord('ba3'));
   // console.log(cnchar.xhy('你', 'fuzzy', 'second')); // ['醉汉过铁索桥', '扶着醉汉过破桥']
   // console.log(cnchar.idiom('你'));
@@ -43,7 +39,7 @@ const handleClick = () => {
   //   ? props.character.map(char => cnchar.shapeSpell(char)).join(' ')
   //   : cnchar.shapeSpell(props.character);
   // emit('click', pinyinText); // 格式：shuì zháo le
-  emit('click', cnchar.shapeSpell(props.character));
+  emit('click', cnchar.shapeSpell(props.character as string)); // 格式：shuì zháo le
 };
 </script>
 
@@ -54,8 +50,8 @@ const handleClick = () => {
       'bg-white hover:bg-green-100 hover:shadow-md': !isActive,
     }">
     <div class="text-2xl font-serif grid grid-cols-2 gap-2">
-      <div>{{ cnchar.shapeSpell(character[0]) }}</div>
-      <div>{{ cnchar.shapeSpell(character[1]) }}</div>
+      <div>{{ cnchar.shapeSpell(character[0] as string) }}</div>
+      <div>{{ cnchar.shapeSpell(character[1] as string) }}</div>
     </div>
     <!-- <div class="text-lg text-gray-500 mb-1">{{ cnchar.spellToWord(props.character.join(" ")) }}</div> -->
   </div>

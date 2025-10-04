@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-import { pinyin } from 'pinyin-pro';
 import CharacterCard from './components/CharacterCard.vue';
 
 const data = {
@@ -56,6 +54,10 @@ const handleCardClick = (char: string) => {
     return;
   }
   // relatedInfo.value = dictionary[char] || null; // 从字典中获取数据
+
+  // if (Array.isArray(char)) {
+  //   char = char.join(' '); // 如果是数组，转换为字符串
+  // }
 
   // 使用 Web Speech API 朗读汉字
   const utterance = new SpeechSynthesisUtterance(char);
